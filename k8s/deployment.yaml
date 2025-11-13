@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: mapper-web
-        image: registry.registry.svc.cluster.local:5000/mapper-web:0
+        image: registry.registry.svc.cluster.local:5000/mapper-web:2
         imagePullPolicy: Always
         ports:
         - containerPort: 80
