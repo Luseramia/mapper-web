@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mapper-web
+  namespace: web
+spec:
+  selector:
+    app: mapper-web
+  ports:
+  - name: http
+    port: 443
+    targetPort: 80 
+    protocol: TCP
+  type: LoadBalancer  
